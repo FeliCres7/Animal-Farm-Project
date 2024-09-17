@@ -8,8 +8,8 @@ body{
 .frid{
     text-align: center;
     font-size: 48px;
-    height: 100%
-    background-color: #793419;
+    height: 100%;
+    text-decoration: underline;
 }
 header{
     padding-top: 0;
