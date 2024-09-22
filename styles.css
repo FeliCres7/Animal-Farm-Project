@@ -118,3 +118,24 @@ button:hover {
     width: 300px;
     font-size: 32px;
 }
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 36px;
+}
+.mainauthor p{
+    text-align: justify;
+    margin: 20px 35px;
+}
+.imgauthor{
+    display: flex;
+    justify-items: center;
+    height: 500px;
+    width: auto;
+}
+.picturesauthor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
