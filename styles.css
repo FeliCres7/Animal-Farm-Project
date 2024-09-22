@@ -63,3 +63,52 @@ button:hover {
     color: #C45327;
     cursor: pointer;
 }
+.characterh1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-justify: center;
+    margin-top: 25px;
+    font-size: 64px;
+}
+.main-character{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.character {
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.character img{
+    width: 700px;
+    border-radius: 10px;
+}
+.character img,
+.character p { 
+    width: 80vh;
+    opacity: 0;
+    max-height: 0; /* Utilizamos max-height en lugar de height */
+    overflow: hidden;
+    transition: opacity 0.5s ease, max-height 0.5s ease; /* Cambiamos height por max-height */
+}
+
+.character.active img,
+.character.active p {
+    opacity: 1;
+    max-height: 500px; /* Un valor lo suficientemente grande para que el contenido quede visible */
+}
+
+.character.active {
+    background-color: #fff;
+    color: #C45327;
+}

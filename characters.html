@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Characters</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>
-        CHARACTERS
-    </h1>
-    </header>
-    <main>
-        <div class="Characterbutton" >
-            <img src="images/oldmajor.jfif" alt="">
-            <p>Old Major</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="images/napoleon.jfif" alt="">
-            <p>Napoleon</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="images/snowball.jpg" alt="">
-            <p>Snowball</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="images/boxer.png" alt="">
-            <p>Boxer</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>Clover</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="images/mollie.jpg" alt="">
-            <p>Mollie</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>Squealer</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>Muriel</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>Benjamin</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>The sheep</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>The dogs</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>The hens</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>The cows</p>
-        </div>
-        <div class="Characterbutton" >
-            <img src="" alt="">
-            <p>The pigs</p>
-        </div>
 
+<body>
+        <h1 class="characterh1">CHARACTERS</h1>
+    <main class="main-character">
+        <div class="character">
+            <h2>Old Major</h2>
+            <img src="images/oldmajor.jfif" alt="">
+            <p>An old boar who inspires the animals to rebel against Mr. Jones.</p>
+        </div>
+        <div class="character">
+            <h2>Napoleon</h2>
+            <img src="images/napoleon.jfif" alt="">
+            <p>A pig who becomes the leader of Animal Farm after the rebellion.</p>
+        </div>
+        <div class="character">
+            <h2>Snowball</h2>
+            <img src="images/snowball.jpg" alt="">
+            <p>A pig who, along with Napoleon, leads the rebellion and helps establish Animal Farm's principles.Runs away after Napoleon's dogs chase him.</p>
+        </div>
+        <div class="character">
+            <h2>Boxer</h2>
+            <img src="images/boxer.png" alt="">
+            <p>A loyal and hardworking horse known for his motto "I will work harder" and later for the motto “Napoleon is always right”. He was the animal that did most of the work on the farm. After he got injured due to excessive work, he was sent by Napoleon to the Slaughter.</p>
+        </div>
+        <div class="character">
+            <h2>Clover</h2>
+            <img src="images/clover.jpg" alt="">
+            <p>A gentle and motherly mare who cares for the other animals.She has a special relationship with Clover and Benjamin.</p>
+        </div>
+        <div class="character">
+            <h2>Mollie</h2>
+            <img src="images/mollie.jpg" alt="">
+            <p>A vain and self-centered mare who is more concerned with luxury than the principles of Animalism.</p>
+        </div>
+        <div class="character">
+            <h2>Squealer</h2>
+            <img src="images/squealer.jpg" alt="">
+            <p>A pig follower of Napoleon. He spreads the news between the animals. He is the one who convinced them to follow this leader.</p>
+        </div>
+        <div class="character">
+            <h2>Muriel</h2>
+            <img src="images/muriel.png" alt="">
+            <p>A goat who reads well and represents intelligence among the animals.</p>
+        </div>
+        <div class="character">
+            <h2>Benjamin</h2>
+            <img src="images/benjamin.jpg" alt="">
+            <p>A cynical and skeptical donkey known for his pessimistic outlook. He is the oldest animal on the farm and he is Boxer's best friend. He tried to save him from being sent to the slaughter but he failed.</p>
+        </div>
+        <div class="character">
+            <h2>The sheep</h2>
+            <img src="images/the sheep.jpg" alt="">
+            <p>Represent the easily manipulated masses who follow the leaders without question.</p>
+        </div>
+        <div class="character">
+            <h2>The hens</h2>
+            <img src="images/the hens.jpg" alt="">
+            <p>Represent the common workers who are exploited for their labor.</p>
+        </div>
+        <div class="character">
+            <h2>The cows</h2>
+            <img src="images/the cows.jpg" alt="">
+            <p>Provide milk for the farm and symbolize the working class.</p>
+        </div>
+        <div class="character">
+            <h2>The dogs</h2>
+            <img src="images/the dogs.jpg" alt="">
+            <p>Initially, they serve as Napoleon's security force and enforcers of his rule.</p>
+        </div>
+        <div class="character">
+            <h2>The pigs</h2>
+            <img src="images/the pigs.jpg" alt="">
+            <p>(aside from Napoleon and Snowball) - Represent the intelligentsia and ruling class.</p>
+        </div>
+        <!-- Agrega más divs como desees -->
     </main>
 
+    <script>
+        // Selecciona todos los elementos con la clase "character"
+        const characters = document.querySelectorAll('.character');
+
+        characters.forEach(character => {
+            // Oculta las imágenes y los párrafos secundarios al cargar la página
+            const img = character.querySelector('img');
+            const extraParagraph = character.querySelectorAll('p')[1];
+
+            if (img) img.style.display = 'block'; // Deja que existan, pero invisibles
+            if (extraParagraph) extraParagraph.style.display = 'block';
+
+            // Agrega el evento de clic
+            character.addEventListener('click', () => {
+                character.classList.toggle('active'); // Alterna la clase "active"
+            });
+        });
+
+    </script>
 </body>
-</html> 
+
+</html>
