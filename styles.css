@@ -112,3 +112,9 @@ button:hover {
     background-color: #fff;
     color: #C45327;
 }
+.backtomenu{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    width: 300px;
+    font-size: 32px;
+}
