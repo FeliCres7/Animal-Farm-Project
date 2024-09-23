@@ -179,3 +179,26 @@ h3{
     color: #C45327;
     cursor: pointer;
 }
+.hidden {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 2s ease, max-height 2s ease;
+}
+
+.visible {
+    opacity: 1;
+    max-height: 1000px; /* Ajusta el valor según el contenido */
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+#timelineContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #C45327;
+    padding: 20px;
+    border-radius: 20px;
+}

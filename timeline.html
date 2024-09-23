@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Story Timeline</title>
-    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bodytimeline">
     <h1 class="characterh1">TIMELINE</h1>
-    <div>    <button onclick="window.location.href='timeline/1.html'">TIMELINE</button>
-</div>
+    <div>
+        <button id="timelineButton">TIMELINE</button>
+    </div>
+    
+    <!-- Contenedor para el contenido expandible -->
+    <div id="timelineContent" class="hidden">
+        <div class="timelinediv">
+            <p>Old Mayor calls a meeting of all the animals, the pigs rush to the front. Old Major, in his speech, points out that no animal knows the meaning of happiness and that all their hard work and production benefits man. If man was removed, the animals would not have to work so hard and would have more to eat. He ends the meeting by assuring them that the revolution would come eventually and teaches them the song ‘Beasts of England’’.</p>
+        </div>
+        <section class="buttons-timeline">
+            <button onclick="hideTimeline()">Back</button>
+            <button onclick="window.location.href='index.html'">Back to menu</button>
+            <button onclick="window.location.href='timeline/2.html'">Next</button>
+        </section>
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
