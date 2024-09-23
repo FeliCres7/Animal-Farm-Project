@@ -139,3 +139,43 @@ h3{
     flex-direction: row;
     justify-content: space-between;
 }
+.bodytimeline{
+    background-image: url(images/background\ timeline.png);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    
+}
+.bodytimeline div{
+    display: flex;
+    justify-content: center;
+    width: 40wh;
+    align-items: center;
+    align-items: center;
+}
+.timelinediv{
+    margin: 25vw;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+    border-radius: 20px;
+    background-color: #fff;
+    color: #C45327;
+    padding: 10px;
+}
+.timelinediv p{font-size: 20px;
+}
+.buttons-timeline button{
+    background-color: #C45327;
+}
+.buttons-timeline button:hover{
+    background-color: #fff;
+    color: #C45327;
+    cursor: pointer;
+}
